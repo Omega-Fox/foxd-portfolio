@@ -57,15 +57,15 @@
 
     .hero {
   background: url('https://raw.githubusercontent.com/Omega-Fox/foxd-portfolio/main/happypetgroomers1.png') center/cover no-repeat;
-  height: 100vh;
+  min-height: 100vh;  /* allows hero to expand if content is larger */
+  padding-top: 120px; /* compensate for fixed navbar (approx 100px + some spacing) */
+  padding-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
-  padding: 0 2rem;
   position: relative;
-  margin-top: 100px; 
 }
 
 .hero::before {
@@ -90,6 +90,16 @@
   z-index: 2;
 }
 
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
 .btn {
   background-color: #ffd166;
   color: #222;
@@ -104,7 +114,6 @@
 .btn:hover {
   background-color: #fcbf49;
 }
-
 
     .section {
       padding: 5rem 2rem;
