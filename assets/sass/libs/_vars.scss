@@ -1,49 +1,49 @@
 // Misc.
-	$misc: (
-		z-index-base:		10000,
-		max-features:		20,
-		max-sidebar-links:	20
-	);
+$misc: (
+	z-index-base:		10000,
+	max-features:		20,
+	max-sidebar-links:	20
+);
 
 // Duration.
-	$duration: (
-		transition:			0.2s,
-		activation:			1s
-	);
+$duration: (
+	transition:			0.2s,
+	activation:			1s
+);
 
 // Size.
-	$size: (
-		border-radius:		0.25em,
-		border-width:		1px,
-		element-height:		2.75em,
-		element-margin:		2em,
-		sidebar-width:		18em,
-		sidebar-height:		3.5em,	// when <=large is active
-		inner-width:		75em
-	);
+$size: (
+	border-radius:		0.25em,
+	border-width:		1px,
+	element-height:		2.75em,
+	element-margin:		2em,
+	sidebar-width:		18em,
+	sidebar-height:		3.5em,	// when <=large is active
+	inner-width:		75em
+);
 
 // Font.
-	$font: (
-		family:				(Arial, Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				normal,
-		weight-bold:		bold,
-		kerning-alt:		0.25em
-	);
+$font: (
+	family:				(Arial, Helvetica, sans-serif),
+	family-fixed:		('Courier New', monospace),
+	weight:				normal,
+	weight-bold:		bold,
+	kerning-alt:		0.25em
+);
 
 // Palette.
-	$palette: (
-		bg:					#312450,
-		bg-alt:				darken(#312450, 5),
-		fg:					rgba(255,255,255,0.55),
-		fg-bold:			#ffffff,
-		fg-light:			rgba(255,255,255,0.35),
-		border:				rgba(255,255,255,0.15),
-		border-bg:			rgba(255,255,255,0.05),
-		accent1:			#5e42a6,
-		accent1-alt:		darken(#5e42a6, 10),
-		accent2:			#5052b5,
-		accent2-alt:		darken(#5052b5, 10),
-		accent3:			#b74e91,
-		accent3-alt:		darken(#b74e91, 10)
-	);
+$palette: (
+	bg:					#121212,                            // Dark green background
+	bg-alt:				darken(#121212, 5),                // Slightly darker background
+	fg:					rgba(255, 255, 255, 0.85),         // White foreground with higher opacity
+	fg-bold:			#ffffff,                           // Pure white for bold text
+	fg-light:			rgba(255, 255, 255, 0.65),         // Lighter white for secondary text
+	border:				rgba(255, 255, 255, 0.25),         // Subtle border
+	border-bg:			rgba(255, 255, 255, 0.15),         // Background-like border
+	accent1:			#4caf50,                           // Primary green accent
+	accent1-alt:		darken(#4caf50, 10),               // Darker green for hover effects
+	accent2:			#81c784,                           // Secondary light green accent
+	accent2-alt:		darken(#81c784, 10),               // Darker light green for hover effects
+	accent3:			#388e3c,                           // Tertiary dark green accent
+	accent3-alt:		darken(#388e3c, 10)                // Even darker green
+);
