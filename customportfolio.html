@@ -6,6 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    /* Additional styles for the project preview overlay */
+    .image-overlay-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-overlay-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .image-overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+  </style>
 </head>
 <body class="is-preload">
 
@@ -54,11 +79,14 @@
 
     <!-- Two -->
     <section id="two" class="wrapper style2 spotlights">
-      <!-- Project 1 -->
+      <!-- Pawlished & Proper Project -->
       <section>
-        <a href="landing-pawlished.html" class="image">
-          <img src="images/happypetgroomers1.png" alt="Pawlished & Proper" />
-        </a>
+        <div class="image-overlay-container">
+          <a href="landing-pawlished.html">
+            <img src="happypetgroomers1.png" alt="Pawlished & Proper" />
+            <div class="image-overlay-text">Pawlished & Proper</div>
+          </a>
+        </div>
         <div class="content">
           <div class="inner">
             <h2>Pawlished & Proper</h2>
@@ -70,9 +98,11 @@
         </div>
       </section>
 
-      <!-- Project 2 -->
+      <!-- North Wind Boarding Kennels Project -->
       <section>
-        <a href="#" class="image"><img src="images/CNWBK_2083x2083_paw_included.png" alt="North Wind Boarding Kennels" data-position="center center" /></a>
+        <a href="#" class="image">
+          <img src="images/CNWBK_2083x2083_paw_included.png" alt="North Wind Boarding Kennels" data-position="center center" />
+        </a>
         <div class="content">
           <div class="inner">
             <h2>North Wind Boarding Kennels</h2>
