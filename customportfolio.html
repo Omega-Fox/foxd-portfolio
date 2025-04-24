@@ -7,16 +7,21 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
-    /* Additional styles for the project preview overlay */
+    /* Additional styles for the project preview overlay and image sizing */
     .image-overlay-container {
       position: relative;
       display: inline-block;
+      width: 100%; /* Ensures image containers are responsive */
+      max-width: 600px;
+      aspect-ratio: 16 / 9; /* Forces all images to maintain a 16:9 aspect ratio */
+      overflow: hidden;
+      border-radius: 8px;
     }
 
     .image-overlay-container img {
       width: 100%;
-      height: auto;
-      border-radius: 8px;
+      height: 100%;
+      object-fit: cover; /* Ensures the image fills the container proportionally */
     }
 
     .image-overlay-text {
@@ -100,9 +105,11 @@
 
       <!-- North Wind Boarding Kennels Project -->
       <section>
-        <a href="#" class="image">
-          <img src="images/CNWBK_2083x2083_paw_included.png" alt="North Wind Boarding Kennels" data-position="center center" />
-        </a>
+        <div class="image-overlay-container">
+          <a href="#">
+            <img src="images/CNWBK_2083x2083_paw_included.png" alt="North Wind Boarding Kennels" />
+          </a>
+        </div>
         <div class="content">
           <div class="inner">
             <h2>North Wind Boarding Kennels</h2>
