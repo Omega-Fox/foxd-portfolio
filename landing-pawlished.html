@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pawlished & Proper</title>
+  <title>Pawlished & Proper | Premium Pet Grooming & Care</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -16,21 +16,23 @@
     }
 
     .hero {
-      background: url('https://images.unsplash.com/photo-1603366615917-1fa6dad5c4c3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-      padding: 0 2rem;
-    }
+  background: url('https://images.unsplash.com/photo-1612531387185-073fdd3c3497?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+}
 
-    .hero-overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 3rem;
-      border-radius: 10px;
-    }
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
 
     .hero h1 {
       font-size: 3rem;
@@ -58,7 +60,7 @@
     }
 
     .section {
-      padding: 4rem 2rem;
+      padding: 5rem 2rem;
       text-align: center;
     }
 
@@ -75,13 +77,21 @@
     }
 
     .icon-box {
-      padding: 1rem;
+      padding: 1.5rem;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      background: #fafafa;
+      transition: transform 0.2s ease;
+    }
+
+    .icon-box:hover {
+      transform: translateY(-5px);
     }
 
     .icon-box i {
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: #58b4ae;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     .gallery {
@@ -93,8 +103,9 @@
 
     .gallery img {
       width: 100%;
+      height: 250px;
+      object-fit: cover;
       border-radius: 8px;
-      height: auto;
     }
 
     footer {
@@ -109,7 +120,31 @@
       text-decoration: none;
       font-weight: 500;
     }
+    @media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .icon-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery img {
+    height: 180px;
+  }
+}
   </style>
+  <meta name="description" content="Pawlished & Proper offers professional pet grooming, boarding, and daycare services. First grooming free for new clients!" />
+<meta name="author" content="David Fox">
 </head>
 <body>
 
@@ -123,6 +158,9 @@
   </section>
 
   <!-- SERVICES -->
+  <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#fff" d="M0,96L48,101.3C96,107,192,117,288,106.7C384,96,480,64,576,69.3C672,75,768,117,864,133.3C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+</svg>
   <section class="section">
     <h2>What We Do</h2>
     <div class="icon-grid">
@@ -157,6 +195,12 @@
   </section>
 
   <!-- FOOTER -->
+  <section class="section" style="background:#fef9f5;">
+  <h2>Ready to Pamper Your Pet?</h2>
+  <p style="margin: 1rem 0;">Join dozens of happy customers and schedule your pet’s first visit today.</p>
+  <a href="#" class="btn">Book Now</a>
+</section>
+
   <footer>
     <p>&copy; 2025 Pawlished & Proper · <a href="#">Privacy Policy</a></p>
   </footer>
