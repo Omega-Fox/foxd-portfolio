@@ -4,93 +4,162 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pawlished & Proper</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Inter', sans-serif;
       background-color: #fff;
       color: #333;
-      padding: 0;
-      margin: 0;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
+      line-height: 1.6;
     }
 
     .hero {
-      background: #fdecec;
-      padding: 3rem 2rem;
-      border-radius: 12px;
+      background: url('https://images.unsplash.com/photo-1603366615917-1fa6dad5c4c3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
       text-align: center;
-      margin-bottom: 2rem;
+      padding: 0 2rem;
+    }
+
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 3rem;
+      border-radius: 10px;
     }
 
     .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
 
     .hero p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin-bottom: 2rem;
     }
 
-    ul li {
-      margin-bottom: 0.6rem;
-    }
-
-    .cta {
-      background: #ff6b6b;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 1.1rem;
+    .btn {
+      background-color: #ffd166;
+      color: #222;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border-radius: 50px;
       text-decoration: none;
-      display: inline-block;
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: background 0.3s ease;
     }
 
-    .cta:hover {
-      background: #e15a5a;
+    .btn:hover {
+      background-color: #fcbf49;
     }
 
-    .center {
+    .section {
+      padding: 4rem 2rem;
       text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .icon-box {
+      padding: 1rem;
+    }
+
+    .icon-box i {
+      font-size: 2rem;
+      color: #58b4ae;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      height: auto;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffd166;
+      text-decoration: none;
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="hero">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay">
       <h1>Pawlished & Proper</h1>
-      <p>✨ First Grooming FREE for New Clients ✨</p>
+      <p>We take care of your pets like they’re part of our family.</p>
+      <a href="#" class="btn">Book Your First Visit</a>
     </div>
+  </section>
 
-    <p class="center">We’re your friendly neighborhood pet grooming experts. Clean, calm, and cuddly—just like your pet will be when we’re done.</p>
-
-    <ul>
-      <li>🐾 Certified groomers</li>
-      <li>🧼 Safe, clean facilities</li>
-      <li>📅 Easy online booking</li>
-    </ul>
-
-    <div class="center">
-      <a href="#" class="cta">Book Now</a>
+  <!-- SERVICES -->
+  <section class="section">
+    <h2>What We Do</h2>
+    <div class="icon-grid">
+      <div class="icon-box">
+        <i class="fas fa-dog"></i>
+        <p>Pet Grooming</p>
+      </div>
+      <div class="icon-box">
+        <i class="fas fa-bone"></i>
+        <p>Daycare & Play</p>
+      </div>
+      <div class="icon-box">
+        <i class="fas fa-home"></i>
+        <p>Boarding</p>
+      </div>
+      <div class="icon-box">
+        <i class="fas fa-heartbeat"></i>
+        <p>Health & Hygiene</p>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <h2>Happy Pets</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Pet 1" />
+      <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="Pet 2" />
+      <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b" alt="Pet 3" />
+      <img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb" alt="Pet 4" />
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Pawlished & Proper · <a href="#">Privacy Policy</a></p>
+  </footer>
+
 </body>
 </html>
