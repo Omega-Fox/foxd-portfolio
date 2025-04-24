@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pawlished & Proper | Premium Pet Grooming & Care</title>
-  <!-- * Google Fonts: Inter for clean modern typeface * -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- * Font Awesome for pet service icons * -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta name="description" content="Pawlished & Proper offers professional pet grooming, boarding, and daycare services. First grooming free for new clients!" />
   <meta name="author" content="David Fox">
@@ -24,7 +22,6 @@
       line-height: 1.6;
     }
 
-    /* * Fixed navigation bar with blur effect * */
     .navbar {
       position: fixed;
       top: 0;
@@ -66,7 +63,6 @@
       color: #253439;
     }
 
-    /* * Hero section with background image and overlay * */
     .hero {
       background: url('https://raw.githubusercontent.com/Omega-Fox/foxd-portfolio/main/happypetgroomers1.png') center/cover no-repeat;
       min-height: 100vh;
@@ -190,11 +186,11 @@
     }
 
     @media (max-width: 600px) {
-      .hero h1 {
+      .hero-overlay h1 {
         font-size: 2rem;
       }
 
-      .hero p {
+      .hero-overlay p {
         font-size: 1rem;
       }
 
@@ -214,7 +210,6 @@
   </style>
 </head>
 <body>
-  <!-- * Navigation Bar * -->
   <nav class="navbar">
     <div class="navbar-container">
       <h3 class="navbar-logo">Pawlished & Proper</h3>
@@ -226,7 +221,6 @@
     </div>
   </nav>
 
-  <!-- * Hero Section * -->
   <section class="hero">
     <div class="hero-overlay">
       <h1>Pawlished & Proper</h1>
@@ -235,12 +229,10 @@
     </div>
   </section>
 
-  <!-- * Decorative SVG Separator * -->
   <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
     <path fill="#fff" d="M0,96L48,101.3C96,107,192,117,288,106.7C384,96,480,64,576,69.3C672,75,768,117,864,133.3C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
   </svg>
 
-  <!-- * Services Section * -->
   <section id="services" class="section">
     <h2>What We Do</h2>
     <div class="icon-grid">
@@ -263,7 +255,6 @@
     </div>
   </section>
 
-  <!-- * Gallery Section * -->
   <section id="gallery" class="section">
     <h2>Happy Pets</h2>
     <div class="gallery">
@@ -274,14 +265,12 @@
     </div>
   </section>
 
-  <!-- * Contact Section * -->
   <section id="contact" class="section" style="background:#fef9f5;">
     <h2>Ready to Pamper Your Pet?</h2>
     <p style="margin: 1rem 0;">Join dozens of happy customers and schedule your pet’s first visit today.</p>
     <a href="#" class="btn">Book Now</a>
   </section>
 
-  <!-- * Footer * -->
   <footer>
     <p>&copy; 2025 Pawlished & Proper · <a href="#">Privacy Policy</a></p>
   </footer>
