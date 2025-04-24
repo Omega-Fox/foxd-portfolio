@@ -4,116 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pawlished & Proper | Premium Pet Grooming & Care</title>
+  <!-- * Google Fonts: Inter for clean modern typeface * -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- * Font Awesome for pet service icons * -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Pawlished & Proper offers professional pet grooming, boarding, and daycare services. First grooming free for new clients!" />
+  <meta name="author" content="David Fox">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       background-color: #fff;
       color: #333;
       line-height: 1.6;
     }
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  z-index: 100;
-}
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-}
+    /* * Fixed navigation bar with blur effect * */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
 
-.navbar-logo {
-  margin: 0;
-  font-weight: 700;
-  color: #4b5e72;
-}
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-.navbar-links {
-  display: flex;
-  gap: 1.5rem;
-}
+    .navbar-logo {
+      margin: 0;
+      font-weight: 700;
+      color: #4b5e72;
+    }
 
-.navbar-links a {
-  text-decoration: none;
-  color: #4b5e72;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
+    .navbar-links {
+      display: flex;
+      gap: 1.5rem;
+    }
 
-.navbar-links a:hover {
-  color: #253439; /* slightly darker on hover for better interactivity */
-}
+    .navbar-links a {
+      text-decoration: none;
+      color: #4b5e72;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
+    .navbar-links a:hover {
+      color: #253439;
+    }
+
+    /* * Hero section with background image and overlay * */
     .hero {
-  background: url('https://raw.githubusercontent.com/Omega-Fox/foxd-portfolio/main/happypetgroomers1.png') center/cover no-repeat;
-  min-height: 100vh;  /* allows hero to expand if content is larger */
-  padding-top: 120px; /* compensate for fixed navbar (approx 100px + some spacing) */
-  padding-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  position: relative;
-}
+      background: url('https://raw.githubusercontent.com/Omega-Fox/foxd-portfolio/main/happypetgroomers1.png') center/cover no-repeat;
+      min-height: 100vh;
+      padding-top: 120px;
+      padding-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  backdrop-filter: blur(2px); 
-  background-color: rgba(0,0,0,0.25); 
-  z-index: 1;
-}
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      backdrop-filter: blur(2px);
+      background-color: rgba(0,0,0,0.25);
+      z-index: 1;
+    }
 
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 3rem;
-  border-radius: 10px;
-  max-width: 600px;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 3rem;
+      border-radius: 10px;
+      max-width: 600px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
 
-.hero-overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+    .hero-overlay h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
 
-.hero-overlay p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
+    .hero-overlay p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
 
-.btn {
-  background-color: #ffd166;
-  color: #222;
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease;
-}
+    .btn {
+      background-color: #ffd166;
+      color: #222;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
 
-.btn:hover {
-  background-color: #fcbf49;
-}
+    .btn:hover {
+      background-color: #fcbf49;
+    }
 
     .section {
       padding: 5rem 2rem;
@@ -176,45 +188,45 @@
       text-decoration: none;
       font-weight: 500;
     }
+
     @media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
+      .hero h1 {
+        font-size: 2rem;
+      }
 
-  .hero p {
-    font-size: 1rem;
-  }
+      .hero p {
+        font-size: 1rem;
+      }
 
-  .btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
+      .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+      }
 
-  .icon-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+      .icon-grid {
+        grid-template-columns: 1fr 1fr;
+      }
 
-  .gallery img {
-    height: 180px;
-  }
-}
+      .gallery img {
+        height: 180px;
+      }
+    }
   </style>
-  <meta name="description" content="Pawlished & Proper offers professional pet grooming, boarding, and daycare services. First grooming free for new clients!" />
-<meta name="author" content="David Fox">
 </head>
 <body>
+  <!-- * Navigation Bar * -->
   <nav class="navbar">
-  <div class="navbar-container">
-    <h3 class="navbar-logo">Pawlished & Proper</h3>
-    <div class="navbar-links">
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Book</a>
+    <div class="navbar-container">
+      <h3 class="navbar-logo">Pawlished & Proper</h3>
+      <div class="navbar-links">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Book</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <!-- HERO -->
+  <!-- * Hero Section * -->
   <section class="hero">
     <div class="hero-overlay">
       <h1>Pawlished & Proper</h1>
@@ -223,12 +235,14 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- * Decorative SVG Separator * -->
   <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#fff" d="M0,96L48,101.3C96,107,192,117,288,106.7C384,96,480,64,576,69.3C672,75,768,117,864,133.3C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-</svg>
+    <path fill="#fff" d="M0,96L48,101.3C96,107,192,117,288,106.7C384,96,480,64,576,69.3C672,75,768,117,864,133.3C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+  </svg>
+
+  <!-- * Services Section * -->
   <section id="services" class="section">
-  <h2>What We Do</h2>
+    <h2>What We Do</h2>
     <div class="icon-grid">
       <div class="icon-box">
         <i class="fas fa-dog"></i>
@@ -249,9 +263,9 @@
     </div>
   </section>
 
-  <!-- GALLERY -->
+  <!-- * Gallery Section * -->
   <section id="gallery" class="section">
-  <h2>Happy Pets</h2>
+    <h2>Happy Pets</h2>
     <div class="gallery">
       <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Pet 1" />
       <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="Pet 2" />
@@ -260,16 +274,16 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- * Contact Section * -->
   <section id="contact" class="section" style="background:#fef9f5;">
-  <h2>Ready to Pamper Your Pet?</h2>
-  <p style="margin: 1rem 0;">Join dozens of happy customers and schedule your pet’s first visit today.</p>
-  <a href="#" class="btn">Book Now</a>
-</section>
+    <h2>Ready to Pamper Your Pet?</h2>
+    <p style="margin: 1rem 0;">Join dozens of happy customers and schedule your pet’s first visit today.</p>
+    <a href="#" class="btn">Book Now</a>
+  </section>
 
+  <!-- * Footer * -->
   <footer>
     <p>&copy; 2025 Pawlished & Proper · <a href="#">Privacy Policy</a></p>
   </footer>
-
 </body>
 </html>
